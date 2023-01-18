@@ -1,0 +1,28 @@
+.listContainer {
+	margin-top: 1rem;
+	display: flex;
+	flex-grow: 1;
+
+	box-sizing: content-box;
+}
+
+.productGrid {
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	box-sizing: content-box;
+}
+
+@media screen and (max-width: 767px) {
+	.listContainer {
+		width: 100%;
+		justify-content: center;
+		flex-grow: 0;
+		box-sizing: border-box;
+	}
+	.productGrid {
+		width: 100%;
+		justify-content: center;
+		box-sizing: border-box;
+	}
+}
